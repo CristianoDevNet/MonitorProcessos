@@ -16,7 +16,7 @@ Programa feito em WPF que instala e executa um serviço do windows, sem necessid
 WindowsService feito em C# responsável por capturar e enviar os processos para a API.
 
 ### Banco de dados
-Apenas 3 tabelas
+Apenas 4 tabelas
 
 ### Site Reactjs
 Interface web para o monitoramento dos processos/máquina.
