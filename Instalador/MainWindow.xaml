@@ -1,0 +1,25 @@
+﻿<Window x:Class="Instalador.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Instalador"
+        mc:Ignorable="d"
+        Title="Monitoramento de Processos : Fortes Tecnologia
+        " Height="554.498" Width="800" ResizeMode="CanResizeWithGrip" Language="pt-Br">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="69"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="txtCMD" IsReadOnly="True" Margin="10,59,10,10" TextWrapping="Wrap" Background="#FF323232" Foreground="#FFB6B6B6" Padding="5" Grid.Row="1"/>
+        <Button x:Name="btnInstall" Content="Instalar" HorizontalAlignment="Right" Margin="0,34,10,0" VerticalAlignment="Top" Padding="18,1" Click="btnInstall_Click" Grid.Row="1" Height="20" Width="76"/>
+        <Button x:Name="btnDesinstalar" Content="Desisntalar" HorizontalAlignment="Right" Margin="0,34,91,0" VerticalAlignment="Top" Padding="18,1" Click="btnDesinstalar_Click" Grid.Row="1" Height="20" Width="96"/>
+        <TextBox x:Name="txtEmpresa" HorizontalAlignment="Left" Height="23" Margin="10,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="327" Grid.Row="1"/>
+        <TextBox x:Name="txtCNPJ" HorizontalAlignment="Left" Height="23" Margin="342,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" Grid.Row="1"/>
+        <TextBlock x:Name="textBlock" Margin="10,10,0,0" TextWrapping="Wrap" Text="Nome da Empresa:" VerticalAlignment="Top" Height="16" Grid.Row="1" HorizontalAlignment="Left"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="342,10,0,0" TextWrapping="Wrap" Text="CNPJ:" VerticalAlignment="Top" Height="16" Grid.Row="1"/>
+        <Label x:Name="label" Content="Instalador do Serviço de Monitoramento de Processos" HorizontalAlignment="Left" Margin="10,17,0,0" VerticalAlignment="Top" FontSize="24" Height="42" Width="583"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="131" Margin="605,-43,0,0" VerticalAlignment="Top" Width="168" Source="logofortes.png" Stretch="None" Grid.RowSpan="2"/>
+    </Grid>
+</Window>

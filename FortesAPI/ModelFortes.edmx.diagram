@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c24c52ae821f4db7a7c0ae3c3b22a347" Name="Diagram1">
+        <EntityTypeShape EntityType="testeftModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="testeftModel.configurations" Width="1.5" PointX="3.75" PointY="3.75" />
+        <EntityTypeShape EntityType="testeftModel.occurrences" Width="1.5" PointX="3" PointY="0.875" />
+        <EntityTypeShape EntityType="testeftModel.processes" Width="1.5" PointX="5.25" PointY="1" />
+        <EntityTypeShape EntityType="testeftModel.stations" Width="1.5" PointX="0.75" PointY="0.875" />
+        <AssociationConnector Association="testeftModel.FK_occurrences_stations" />
+        <AssociationConnector Association="testeftModel.FK_processes_occurrences" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
