@@ -24,7 +24,7 @@ Interface web para o monitoramento dos processos/máquina.
 # Funcionamento
 O instalador do serviço recuperar informações(nome da empresa e cnpj), ao clicar em Instalar, então:
 * Acessa a api para cadastrar a station, recebendo o cód. de cadastro (id)
-* Acessa a subpasta "ServicoProcessos" e grava um pequeno arquivo .ini com o id de cadastro retornado no passo anterior
+* Acessa a subpasta "ServicoProcessos"(este é o projeto do serviço) e grava um pequeno arquivo .ini com o id de cadastro retornado no passo anterior
 * Verifica se a instalação do serviço foi realizada e o executa.
 
 Após isso, o serviço passa a enviar periodicamente a api a listagem dos processos correntes na máquina.
