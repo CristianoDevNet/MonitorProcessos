@@ -14,13 +14,6 @@ namespace FortesAPI.Controllers
         {
             using (testeftEntities db = new testeftEntities())
             {
-                //var c = db.configurations.ToList();
-
-                //if (c.Count == 0)
-                //{
-                //    return NotFound();
-                //}
-
                 var c = db.configurations.FirstOrDefault();
 
                 if (c == null)
@@ -33,63 +26,63 @@ namespace FortesAPI.Controllers
         }
 
         //// GET: api/Config/5
-        public IHttpActionResult Get(int id)
-        {
-            //using (testeftEntities db = new testeftEntities())
-            //{
-            //    configurations c = db.configurations.Find(id);
+        //public IHttpActionResult Get(int id)
+        //{
+        //    //using (testeftEntities db = new testeftEntities())
+        //    //{
+        //    //    configurations c = db.configurations.Find(id);
 
-            //    if (c == null)
-            //    {
-            //        return NotFound();
-            //    }
+        //    //    if (c == null)
+        //    //    {
+        //    //        return NotFound();
+        //    //    }
 
-            //    return Ok(c);
-            //}
+        //    //    return Ok(c);
+        //    //}
 
-            return NotFound();
-        }
+        //    return NotFound();
+        //}
 
         // POST: api/Config
-        public IHttpActionResult Post([FromBody]dynamic value)
-        {
-            //using (testeftEntities db = new testeftEntities())
-            //{
-            //    configurations c = new configurations();
+        //public IHttpActionResult Post([FromBody]dynamic value)
+        //{
+        //    //using (testeftEntities db = new testeftEntities())
+        //    //{
+        //    //    configurations c = new configurations();
 
-            //    c.interval = value.interval;
+        //    //    c.interval = value.interval;
 
-            //    db.configurations.Add(c);
+        //    //    db.configurations.Add(c);
 
-            //    db.SaveChanges();
+        //    //    db.SaveChanges();
 
-            //    return Ok(c.id);
-            //}
+        //    //    return Ok(c.id);
+        //    //}
 
-            return NotFound();
-        }
+        //    return NotFound();
+        //}
 
         // PUT: api/Config/5
-        public IHttpActionResult Put(int id, [FromBody]dynamic value)
-        {
-            //using (testeftEntities db = new testeftEntities())
-            //{
-            //    configurations s = db.configurations.Find(id);
+        //public IHttpActionResult Put(int id, [FromBody]dynamic value)
+        //{
+        //    //using (testeftEntities db = new testeftEntities())
+        //    //{
+        //    //    configurations s = db.configurations.Find(id);
 
-            //    s.interval = value.inerval;
+        //    //    s.interval = value.inerval;
 
-            //    db.SaveChanges();
+        //    //    db.SaveChanges();
 
-            //    return Ok();
-            //}
+        //    //    return Ok();
+        //    //}
 
-            return NotFound();
-        }
+        //    return NotFound();
+        //}
 
-        // DELETE: api/Config/5
-        public IHttpActionResult Delete(int id)
-        {
-            return NotFound();
-        }
+        //// DELETE: api/Config/5
+        //public IHttpActionResult Delete(int id)
+        //{
+        //    return NotFound();
+        //}
     }
 }
